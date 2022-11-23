@@ -1,8 +1,32 @@
 
-.title{
-    background-color:red;
+
+.cart{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding-right: 1em;
 }
 
-.prueba{
-    background-color: red;
+.cart:hover{
+    color:red;
 }
+
+.qty-display {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(233, 20, 20);
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    line-height: 17px;
+    margin-left:-2em;
+  }
+
+  .navLogo{
+    background-image: url(./assets/logo2.svg);
+    width:5em;
+    height:3em;
+    background-repeat: no-repeat;
+  }
+  
