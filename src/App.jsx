@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu from './components/Menu'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+    <Menu />
+    <p className="prueba">
+      hola
+    </p>
+    </>
   )
 }
 
