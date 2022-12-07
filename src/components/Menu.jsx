@@ -1,7 +1,6 @@
 import { NavDropdown, Navbar, Nav, Form, Container, Button } from "react-bootstrap"
 import CartWidget from './CartWidget'
-
-
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -9,9 +8,7 @@ const Menu = () => {
       <header>
         <Navbar expand="lg" variant="dark" bg="dark">
           <Container fluid>
-            <Navbar.Brand href="#" className="navLogo">
-              <img src="../" alt="" />
-            </Navbar.Brand>
+            <Link className="navLogo" to="/" />
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -19,33 +16,30 @@ const Menu = () => {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link href="#" className="navText">
-                  Inicio
-                </Nav.Link>
+                <Link to="/">
+                  <Nav className="navText nav-link"> Inicio </Nav>
+                </Link>
                 <NavDropdown
                   title="Productos"
                   id="navbarScrollingDropdown"
                   className="navText"
                 >
-                  <NavDropdown.Item href="#" className="navText">
+                  <Link to="/category/1" className="dropdown-item nav-link">
                     Componentes
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#" className="navText">
+                  </Link>
+                  <Link to="/category/2" className="dropdown-item nav-link">
                     Periféricos y accesorios
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#" className="navText">
+                  </Link>
+                  <Link to="/category/3" className="dropdown-item nav-link">
                     Equipos y Notebooks
-                  </NavDropdown.Item>
+                  </Link>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#" className="navText">
+                  <Link to="/category/4" className="dropdown-item nav-link">
                     Otros
-                  </NavDropdown.Item>
+                  </Link>
                 </NavDropdown>
               </Nav>
               <Form className="d-flex">
-              
-                  
-          
                 <Form.Control
                   type="search"
                   placeholder="Search"
@@ -54,7 +48,6 @@ const Menu = () => {
                   aria-label="Search"
                 />
                 <Button variant="outline-none" className="searchBtn">
-                  
                 </Button>
               </Form>
               <CartWidget />
