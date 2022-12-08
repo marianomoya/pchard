@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <>
       <main className="mainContainer">
-        <section className="productSection">
+        <section className="productContainer">
           <ItemListContainer />
         </section>
       </main>

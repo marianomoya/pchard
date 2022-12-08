@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <>
       <header>
-        <Navbar expand="lg" variant="dark" bg="dark">
+        <Navbar expand="lg" variant="dark" bg="dark" className="navMain">
           <Container fluid>
             <Link className="navLogo" to="/" />
             <Navbar.Toggle aria-controls="navbarScroll" />
